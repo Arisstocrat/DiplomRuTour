@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/background_color2"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.widget.Button
+        android:id="@+id/main_hotels_btn"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/designe"
+        android:onClick="onClickhot"
+        android:padding="20dp"
+        android:text="Отели"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <android.widget.Button
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="40dp"
+        android:layout_toEndOf="@+id/main_ex_btn"
+        android:background="@drawable/designe"
+        android:onClick="onClick3"
+        android:padding="20dp"
+        android:text="Связь"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/logoutButton"
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+
+        android:layout_marginEnd="234dp"
+        android:text="Выход из учетной записи"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="173dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/main_hotels_btn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="88dp"
+        android:text="Выберите город"
+
+        android:textColor="@android:color/white" />
+
+    <android.widget.Button
+        android:id="@+id/main_ex_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginRight="40dp"
+        android:layout_toEndOf="@+id/main_hotels_btn"
+        android:background="@drawable/button"
+        android:padding="20dp"
+        android:text="Экскурсии"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerCities"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="56dp"
+        android:hint="Введите цену"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHotels"
+        android:layout_width="match_parent"
+        android:layout_height="431dp"
+        android:layout_below="@+id/editTextPrice"
+        android:layout_marginTop="17dp"
+        android:textColor="@android:color/white" />
+
+    <Spinner
+        android:id="@+id/spinnerCities"
+        android:layout_width="229dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/Text1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/spinner"
+        android:spinnerMode="dropdown"
+        android:textColor="@android:color/white" />
+
+    <Spinner
+        android:id="@+id/spinnerSort"
+        android:layout_width="107dp"
+        android:layout_height="32dp"
+
+        android:layout_below="@+id/Text1"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="6dp"
+        android:layout_toStartOf="@+id/spinnerCities"
+        android:background="@drawable/spinner"
+        android:spinnerMode="dropdown" />
+
+</RelativeLayout>

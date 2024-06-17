@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color2"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/sendButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="-543dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/logo" />
+
+    <android.widget.Button
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="40dp"
+        android:layout_toEndOf="@+id/main_ex_btn"
+        android:background="@drawable/button"
+        android:onClick="onClick3"
+        android:padding="20dp"
+        android:text="Связь"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <android.widget.Button
+        android:id="@+id/main_hotels_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/designe"
+        android:onClick="onClickhot"
+        android:padding="20dp"
+        android:text="Отели"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <android.widget.Button
+        android:id="@+id/main_ex_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginRight="40dp"
+        android:layout_toEndOf="@+id/main_hotels_btn"
+        android:background="@drawable/designe"
+        android:onClick="onClick2"
+        android:padding="20dp"
+        android:text="Экскурсии"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/toEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_ex_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Электронная почта "
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/subjectEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="23dp"
+        android:hint="Тема" />
+
+    <EditText
+        android:id="@+id/bodyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subjectEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Описание"
+        android:inputType="textMultiLine"
+        android:minLines="5" />
+
+    <android.widget.Button
+        android:id="@+id/sendButton"
+        android:layout_width="138dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/bodyEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="257dp"
+        android:text="Отправить" />
+
+</RelativeLayout>

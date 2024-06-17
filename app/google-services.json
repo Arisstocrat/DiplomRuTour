@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "27794839698",
+    "firebase_url": "https://rutourdiplom-default-rtdb.firebaseio.com",
+    "project_id": "rutourdiplom",
+    "storage_bucket": "rutourdiplom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27794839698:android:f7235e21f5561c9513ae4b",
+        "android_client_info": {
+          "package_name": "com.example.rutour_diplom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtJM8blYpHQLFYip-GCGol4MJl0SDF5WY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
